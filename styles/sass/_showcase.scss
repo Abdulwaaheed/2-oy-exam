@@ -1,0 +1,122 @@
+.showcase {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      position: relative;
+      img{
+          position: absolute;
+          top: 0px;
+          left: 0;
+          bottom: 0px;
+          }
+          img:nth-child(2){
+              top: 400px;
+              bottom: 0;
+          }
+      h1{
+          position: relative;
+          font-size: 56px;
+          color: #002A48;
+          margin: 0;
+      }
+      h2{
+          color: #002A48;
+          font-size: 40px;
+      }
+      p{
+          font-size: 17px;
+      }
+      .btn{
+          width: 400px;
+          display: flex;
+          gap: 20px;
+          // justify-content: center;
+          align-items: center;
+          button{
+              width: 150px;
+              height: 40px;
+              border-radius: 30px;
+              border: 1px solid #002A48;
+              background-color: inherit;
+              color: #002A48;
+              &:hover{
+                  background-color: #002A48;
+                  color:white;
+                  transition: 0.3s all linear;
+              }
+              &:active{
+                  opacity: 0.9;
+                  transform: scale(0.9);
+                  transition: 0.2s all ease-in-out;
+              }
+          }
+          button:nth-child(1){
+              margin: 5px;
+              i{
+                  margin-left: 5px;
+                  width: 20px;
+                  height: 20px;
+                  border-radius: 50%;
+                  border: 1px solid #002A48;
+                  padding: 1px 0 0 2px;
+                  margin-top: 3px;
+              }
+          }
+      }
+    }
+    .right {
+      // width: 70%;
+      position: relative;
+      height: 600px;
+      .rasm {
+        position: relative;
+        width: 800px;
+        height: 900px;
+        img:nth-child(1) {
+          position: absolute;
+          // display: flex;
+          bottom: 1px;
+          left: 30px;
+          width: 700px;
+          height: 700px;
+        }
+        img:nth-child(2) {
+          position: absolute;
+          // display: flex;
+          bottom: -50px;
+          left: 46px;
+          // top: 1000px;
+          width: 800px;
+          height: 900px;
+        }
+        img:nth-child(3) {
+          position: absolute;
+          width: 900px;
+          height: 580px;
+          bottom: 280px;
+          left: 10px;
+        }
+        img:nth-child(4) {
+          position: absolute;
+          bottom: 750px;
+          left: 150px;
+        }
+        img:nth-child(5) {
+          position: absolute;
+          bottom: 750px;
+          left: 150px;
+        }
+        img:nth-child(6) {
+          position: absolute;
+          bottom: 830px;
+          left: 200px;
+        }
+      }
+    }
+  }
+  

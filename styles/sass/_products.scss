@@ -1,0 +1,66 @@
+.product{
+    .top{
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button{
+            width: 150px;
+            height: 40px;
+            border-radius: 30px;
+            border: 1px solid #002A48;
+            background-color: inherit;
+            color: #002A48;
+            &:hover{
+                background-color: #002A48;
+                color:white;
+                transition: 0.3s all linear;
+            }
+            &:active{
+                opacity: 0.9;
+                transform: scale(0.9);
+                transition: 0.2s all ease-in-out;
+            }
+        }
+    }
+    .bottom{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-row:1/3;
+        grid-column: 1 / 5;
+        gap: 30px;
+        .card {
+            overflow: hidden;
+            width: 280px;
+            color: #002a48;
+            padding: 5px;
+            border-radius: 8px;
+            background: #ffffff;
+            box-shadow: 16px 16px 32px #c7c7c7, -16px -16px 32px #f9f9f9;
+            h6 {
+              margin-block: 10px;
+              color: grey;
+            }
+            span {
+              font-weight: 600;
+            }
+            img {
+              border-top-left-radius: 10px;
+              border-top-right-radius: 5px;
+              width: inherit;
+            }
+            p{
+                margin-top: 10px;
+                margin-left: 10px;
+                width: 90%;
+                height: 30px;
+                background-color: #FCeED5;
+                padding: 5px;
+                i{
+                    color: red;
+                }
+            }
+          }
+}
+}

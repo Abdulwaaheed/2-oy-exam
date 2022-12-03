@@ -1,0 +1,44 @@
+.partners{
+    margin-top: 50px;
+    height: 150px;
+    // background-color: aqua;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        height: 50%;
+        button{
+            padding: 5px;
+            width: 150px;
+            height: 40px;
+            border-radius: 30px;
+            border: 1px solid #002A48;
+            background-color: inherit;
+            color: #002A48;
+            &:hover{
+                background-color: #002A48;
+                color:white;
+                transition: 0.3s all linear;
+            }
+            &:active{
+                opacity: 0.9;
+                transform: scale(0.9);
+                transition: 0.2s all ease-in-out;
+            }
+        }
+        p{
+            font-size: 16px;
+            span{
+                font-size: 18px;
+                font-weight: 800;
+                color: #002a48;
+
+            }
+        }
+    }
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50%;
+    }
+}
